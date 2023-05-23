@@ -1,0 +1,438 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Vina+Sans&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font: Times New Roman, "Times New Roman";
+    font-size: 23px;
+  }
+
+body {
+  background: linear-gradient(#cdb891,#282424); 	
+}
+/* all similar content styling codes */
+section{
+  padding: 100px 0;
+}
+.max-width{
+  max-width: 2500px;
+  padding: 0 80px;
+  margin: auto;
+}
+.about, .services, .skills, .teams, .contact, .xp, footer{
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.xp .xp-content,
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fbfbfb;
+  transform: translateX(-50%);
+}
+section .title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #b1b1b1;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+  /* Navbar */
+  nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bolder;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: #cdb891;
+    box-shadow: 0 3px 15px rgb(255, 248, 248);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #cdb891;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #000000;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  section{
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .home{
+    display: flex;
+    background: url("images/backgroundimage.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: #ffffff;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #f6f6f6;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #3066BE;
+    transition: all 0.3s ease;
+}
+                              
+
+/* about section styling */
+.about .title::after{
+    content: "Who am I?";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #ffffff;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #fafcff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #3066BE;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: #ffffff;
+    background: none;
+}
+  .home{
+    display: flex;
+    background: url("images/backgroundimage.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow:2px 4px 4px #582f0e;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #3066BE;
+    color: #cdb891;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #3066BE;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #000000;
+    background: none;
+}
+
+/* about section styling */
+.about .title::after{
+    content: "Who am I?";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #000000;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: #000000;
+    background: none;
+}
+
+/*Datascience intro paragraph*/
+.small {
+  display: flex;
+  margin-top: -700px;
+  font-size: 45px;
+
+
+}
+
+/* auto type animation */
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: -850vh;
+  margin-bottom: auto;
+  background: #e1edff;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -363330px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+#V{
+  color:#faebd7
+}
+
+.man_Text:hover{
+
+  color:#faebd7
+}
+
+
+
+article{
+  padding: 10px;
+  padding: bottom 34ex;
+  margin-left:20px
+  
+}
+
+.typing {
+  color: #030303;
+
+}
+
+.UsecasesOfTheseAlgorithms{
+  text-align: center;
+  font-size: 60px;
+  text-align: top;
+  position:relative; 
+  margin-bottom:5px; 
+  bottom: 50px;
+  
+}
+#usecase_text_1{
+  position: relative;
+  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+
+
